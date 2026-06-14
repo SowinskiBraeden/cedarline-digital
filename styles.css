@@ -152,6 +152,10 @@ dl {
     border: 0;
 }
 
+.digital-word {
+    transform: translateX(3px);
+}
+
 .site-header {
     position: sticky;
     top: 16px;
