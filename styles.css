@@ -2073,6 +2073,18 @@ main::before {
     display: none;
 }
 
+#work .card-icon {
+    width: 10px;
+    height: 10px;
+    margin: 12px 0 0 14px;
+    border-color: rgba(134, 179, 143, 0.42);
+    border-radius: 50%;
+    background-color: var(--soft);
+    background-image: none;
+    box-shadow: 0 0 0 6px rgba(42, 94, 62, 0.18);
+    opacity: 0.82;
+}
+
 #work .service-card h3 {
     margin: 5px 0 0;
     font-size: 1.15rem;
