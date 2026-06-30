@@ -2186,7 +2186,7 @@ main::before {
 
 .resource-links {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     border-top: 1px solid var(--border);
 }
 
@@ -2571,6 +2571,7 @@ main::before {
     display: grid;
     grid-template-columns: repeat(2, minmax(90px, 1fr));
     gap: clamp(44px, 6vw, 84px);
+    align-items: start;
     justify-self: end;
     min-width: min(100%, 440px);
     justify-items: end;
@@ -2694,7 +2695,6 @@ main::before {
     }
 
     .site-footer .footer-inner,
-    .site-footer .footer-links,
     .site-footer .footer-bottom {
         grid-template-columns: 1fr;
     }
@@ -2703,7 +2703,15 @@ main::before {
         gap: 42px;
     }
 
-    .site-footer .footer-links,
+    .site-footer .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        justify-self: stretch;
+        min-width: 0;
+        justify-items: start;
+        text-align: left;
+    }
+
     .site-footer .footer-links div {
         justify-items: start;
         min-width: 0;
